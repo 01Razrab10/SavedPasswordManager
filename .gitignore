@@ -39,6 +39,7 @@ build/
 .DS_Store
 
 # Build folders and IDE settings
+out/
 target/
 .idea/
 *.iml
@@ -49,4 +50,5 @@ target/
 
 # Executable files
 *.exe
+*.jar
 
