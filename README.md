@@ -1,4 +1,4 @@
-# Saved Password Manager
+# Password Manager
 
 <img width="1100" height="635" alt="Снимок экрана 2026-02-03 175416" src="https://github.com/user-attachments/assets/3150736c-2804-4901-a398-ed21bd188da4" />
 
