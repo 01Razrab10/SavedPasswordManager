@@ -32,7 +32,7 @@ public class PasswordGenerator {
             System.out.println("Сгенерированный пароль: " + generatePassword);
             System.out.println("---------------------------------");
             copyToClipboard.passwordIntoClipboard(generatePassword);
-            System.out.println("\nНажмите Enter чтобы закрыть...");
+            System.out.println("\nНажмите Enter чтобы перейти в главное меню...");
             new java.util.Scanner(System.in).nextLine();
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());

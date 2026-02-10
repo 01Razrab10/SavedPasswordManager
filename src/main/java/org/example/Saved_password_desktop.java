@@ -27,6 +27,7 @@ public class Saved_password_desktop {
         System.out.println("| 1: Добавить пароль             |");
         System.out.println("| 2: Удалить пароль              |");
         System.out.println("| 3: Вывести сохранённые пароли  |");
+        System.out.println("| 4: Вернуться в главное меню    |");
         System.out.println("|________________________________|\n");
         System.out.print("-> Выберите номер операции:\n");
         String numberOperation = scanner.nextLine().trim();
@@ -39,9 +40,9 @@ public class Saved_password_desktop {
                 System.out.println("-> Для чего этот пароль:");
                 String description = scanner.nextLine();
                 addPassword(password, description);
-                System.out.println("\nНажмите Enter чтобы закрыть...");
+                System.out.println("\nНажмите Enter чтобы перейти в главное меню...");
                 new java.util.Scanner(System.in).nextLine();
-                break;
+                return;
 
             case "2" :
                 getAllPasswords();
@@ -51,19 +52,22 @@ public class Saved_password_desktop {
                 int idPassword = Integer.parseInt(idString);
 
                 deletePassword(idPassword);
-                System.out.println("\nНажмите Enter чтобы закрыть...");
+                System.out.println("\nНажмите Enter чтобы перейти в главное меню...");
                 new java.util.Scanner(System.in).nextLine();
-                break;
+                return;
 
             case "3":
                 getAllPasswords();
-                System.out.println("\nНажмите Enter чтобы закрыть...");
+                System.out.println("\nНажмите Enter чтобы перейти в главное меню...");
                 new java.util.Scanner(System.in).nextLine();
-                break;
+                return;
+
+            case "4":
+                return;
 
             default:
                 System.out.println("Неправильный номер операции");
-                System.out.println("\nНажмите Enter чтобы закрыть...");
+                System.out.println("\nНажмите Enter чтобы перейти в главное меню...");
                 new java.util.Scanner(System.in).nextLine();
         }
     }
